@@ -1,0 +1,14 @@
+Git es un software de control de versiones destribuio y decentralizado que permite un equipe de desarolladores trabajar en el mismo código.
+
+Se denomina "districuido" por cada miembro del equipo dispone de una copia completa del código.
+
+Los miebros del equipo pueden enviar codigos, recibirlo y desarrollar funciones de forma conjuta y separada del servidor central.
+
+Algunas ventajes de usarlo:
+
+* Es el estándar actual.
+* Código colaborativo, versionado y destribuido.
+* Recuperacion de archivos.
+* Mayor control.
+* Shortcuts y plugins.
+* Mejora la productividad.
