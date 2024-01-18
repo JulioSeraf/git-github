@@ -22,7 +22,8 @@ Configuración inicial
 
 configurando Git por primera vez
 
-git --version
+git --version:
+     Nos muestra la version instalada de git
 git config --global user.name "Julio Serafim"
 git config --global user.email juliodev26@gmail.com
 git config --global user.ui true
@@ -31,18 +32,32 @@ git config --list
 
 **** asignando visual studio code como editor de configuración de git 
 
-git config ---global core.editor "code --wait"
-git config --global -e
-
+git config ---global core.editor "code --wait":
+   Asigna studio code como editor de terminar 
+git config --global -e:
+     Abre configuracio de git en studio code
 **** para estandarizar los saltos de lineas en windows
 git config --global core.autocrlf  true
-
-**** para estandarizar los saltos de linea en linux/mac
+     Este comando es para estandarizar los saltos de lineas indeoendente dos sistema operativos que tenemos
+**** para estandarizar los saltos de linea en linux/mac:
+     los mismo comando pera para linux y mac
 git config --global core.autocrlf input
 
 **** ver todas las opcioned de la configuracion de la terminal
 git config -h
+     mostra todas las config de la documentacion de git en la terminal
 
 **** ver todas las opciones de la configuracion en el navegador
 
 git help config
+
+
+
+Inicializar git en un directorio local 
+
+mkdir carpeta
+cd carpeta 
+touch README.md
+touch .gitignore
+git init
+code .
