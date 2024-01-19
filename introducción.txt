@@ -103,4 +103,4 @@ al terminar guarda y cierra el archivo
 * para las subsecuentes actualizaciones, sino cambias de rama
      git push
 * para descargar los cambios del repositorio remoto al local
-     git pull
+     git pull 
