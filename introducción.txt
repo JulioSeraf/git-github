@@ -53,6 +53,23 @@ git help config
 
 
 
+FLUJO BASICO
+
+El fujo de Git, consta de 3 estados locales, es decir en la computadora que se esta trabajando y uno mas de forma remota cuando accedemos al codigo centralizado en plataformas como github, gitlab y bitBucket, etc.
+
+Dichos estados son, modified, staged, committed y remote. A cada un de ellos les corresponde una area de trabajo.
+
+1 Working directory : Es la area que corresponde al Modified y es la carpeta local donde almacenas los archivos de tu proyecto. los directoios son las carpetas de git de nuestro projecto. todos los cambios hechos en ellas nos sera mostrado como modified en nustro working directory.
+
+2 Staging Area: Es la area correspondiente al estado Staged tanbien se llama index por que es la area donde git indexa y agrega los cambios realizados en los archivos previos a comprometerlos en su registro. Passamos del working directory para el staged usando el comando git add
+
+3 Local Repository: Es el area correspondiente al committed, donde los cambios ya se han registrado en el repositorio de git tanbiem se llama HEAD por que se indica en que cambio se encuentra el puntero del repositorio. Para passar del staged al committed usamos el comando git commit, eso hace el registro de los cambios en nuestro repositorio local, marcado en el historico los cabios hechos. ejemplo seria : julio ha echo un cabio a las 22:00 en tal archivos.
+
+4 Remote Repository: Es el area correspindiente al estado remote y es el derectorio remoto donde almacenamos los archivos del proyecto en algunas plataformas como github, gitlab, bitBucket. Git denomina origin al repositorio remoto.
+
+
+
+
 Inicializar git en un directorio local 
 
 * mkdir carpeta  = criar carpeta
@@ -60,4 +77,4 @@ Inicializar git en un directorio local
 * touch README.md = para criar duciomento / podemos usar tambien "echo. >" en windows
 * touch .gitignore = al criar este documento git sabe que todos articho o rutas en nel teven ser ignorados
 * git init = para inicializar repozitorio cria  carpeta oculta de git
-* code . = abre la carpeta en visual stude code
+* code . = abre la carpeta en visual stude code.
