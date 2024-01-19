@@ -30,7 +30,7 @@ git config --global user.ui true
 git config --global init.defaultBranch main
 git config --list 
 
-**** asignando visual studio code como editor de configuración de git 
+**** asignando visual studi code como editor de configuración de git 
 
 git config ---global core.editor "code --wait":
    Asigna studio code como editor de terminar 
