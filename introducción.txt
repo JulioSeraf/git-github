@@ -156,8 +156,9 @@ Para hacerlo, sigue las instrucciones de este enlace https://docs.github.com/en/
 #Paso 5
 # Elimina la rama master del repositorio remoto
 
-     git push origin --delate master 
+     git push origin --delete master 
 
 Para reemplazar la rama master por main en git 
 
      git config --global ini.defaultBranch main
+
