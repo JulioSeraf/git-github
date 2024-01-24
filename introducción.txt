@@ -162,3 +162,13 @@ Para reemplazar la rama master por main en git
 
      git config --global ini.defaultBranch main
 
+
+AYUDA DE COMANDO TERMINAL 
+
+#ayuda en la terminal 
+     git comando -h = ex: git add -h
+
+# ayuda en el navegador 
+     git help comando 
+
+
