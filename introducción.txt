@@ -192,4 +192,38 @@ en el archivo .gitignore incluimos todo lo que NO queramos incluir en nustri rep
 #ignorar todos los archivos terminados en .txt detro de la carpeta doc. y sus subcarpetas
      doc/**/*.txt
 
+CLONAR REPOSITORIOS
+     git clone url-del-repositorio-de-git.git
 
+
+RAMAS 
+
+Una rama nos permite aislar una funcionalidad de nuestro codigo que despues podremos añadir a la versión principal.
+
+# crear rama 
+     git branch nombre-rama
+
+# cambiar  de rama 
+     git checkout nombre-rama
+
+# crear una rama y cambiarte a ella
+     git checkout -b rama
+
+# eliminar rama 
+     git branch -d nombre-rama
+
+# elimiar ramas remotas 
+     git push origin --delete nombre-rama
+
+# eliminar rama (forzado)
+     git branch -D nombre-rama
+
+# lista ramas no fusionadas a la rama actual 
+     git branch --no-merged
+
+# lista ramas fusionadas a la rama actual 
+     git branch --merged
+
+# rebasar ramas 
+     git checkout rama-secundaria
+     git rebase rama-principal
