@@ -243,3 +243,24 @@ Cuando se fusionan ramas se pueden dar 2 resultados diferentes:
 
 # ejecutamos el comando merge con la rama segundaria a fusionar 
      git merge rama-segundaria
+
+
+CAMBIOS 
+
+Puedes agregar modificaciones al ultimo cambio
+
+# sin editar el mensaje del ultimo commit
+     git commit --amend --no-edit
+
+# editando el mensaje del ultimo commit
+     git commit --amend -m "nuevo mensaje para el ultimo commit"
+# eliminando el ultimo commit 
+     git reset --hard HEAD
+
+Podemos desplazarnos en el historial del repositorio hacia atras o adelante em cambios o ramas, sin afectar el repositorio como tal
+
+Passos 
+# Cambiar a una rama 
+     git checkout nombre-rama
+# Cambiar a un commit en particular 
+     git checkout id-commit
