@@ -264,5 +264,3 @@ Passos
      git checkout nombre-rama
 # Cambiar a un commit en particular 
      git checkout id-commit
-
- 
