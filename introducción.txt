@@ -264,3 +264,29 @@ Passos
      git checkout nombre-rama
 # Cambiar a un commit en particular 
      git checkout id-commit
+
+REGISTRO DEL HISTORIAL
+
+git log nos permite conocer todos lo historial de un proyecto, con la informacion de la fecha el autor y el id de cada cambio
+
+git log
+
+# mostra en una sola linea por cambio
+     git log --oneline
+# guarda el log en la ruta y archivo que especifiquemos
+     git log > commits.text
+# muestra el historial con el formato que indicamos 
+     git log --pretty=format:"%h - %ar : %s"
+# cambiamos la n por por cualquer numero intero y nos mostrará los n cambios recientes
+     git log -n
+# muestra los cambios realizados despues de la fecha especificada
+     git log  --after="2019-07-07 00:00:00"
+# muestra los cambios antes de la fecha especificada
+     git log --before="2019-07-07 00:00:00"
+# muestra los cambios realizados en el rango de la fecha especificada
+     git log --after="2019-07-07 00:00:00" --before="2019-07-07 00:00:00"
+# muestra todo el registro de acciones del log 
+# incluyendo inserciones, cambios, eliminaciones, fusiones, etc.
+     git reflog
+# diferencias entre el Working Directory y el Staging Area
+     git diff
