@@ -255,7 +255,7 @@ Puedes agregar modificaciones al ultimo cambio
 # editando el mensaje del ultimo commit
      git commit --amend -m "nuevo mensaje para el ultimo commit"
 # eliminando el ultimo commit 
-     git reset --hard HEAD
+     git reset --hard HEAD~1
 
 Podemos desplazarnos en el historial del repositorio hacia atras o adelante em cambios o ramas, sin afectar el repositorio como tal
 
@@ -264,3 +264,4 @@ Passos
      git checkout nombre-rama
 # Cambiar a un commit en particular 
      git checkout id-commit
+
