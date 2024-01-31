@@ -294,3 +294,5 @@ git log
 # nos muestra los cambios y commit en forma grafica de branchs
      git log --oneline --graph --all
 
+lambrando que podemos usar varios comando de git juntos 
+     ex: git log --oneline --graph --all > graph.txt 
