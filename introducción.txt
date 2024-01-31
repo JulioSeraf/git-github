@@ -290,3 +290,7 @@ git log
      git reflog
 # diferencias entre el Working Directory y el Staging Area
      git diff
+
+# nos muestra los cambios y commit en forma grafica de branchs
+     git log --oneline --graph --all
+
