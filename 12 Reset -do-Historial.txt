@@ -1,0 +1,15 @@
+RESETEO DEL HISTORIAL 
+Podemos eliminar el historial de cambios del proyecto hacia adelante com respecto a un punto de referencia.
+
+# nos muestra el listado de archivos nuevos(untracked), borrados o editados
+    git status
+# borra HEAD
+    git reset --software
+# borra HEAD y Staging
+    git reset --mixed
+# borra todo : HEAD, Staging Y  Working Directory
+    git reset --head
+# deshace todo el comando despues del commit indicado, preservando los cambios localmente
+    git rest id-commit 
+# deshace todo el historial y regresa al commit especificado
+    git reset --hard id-commit  

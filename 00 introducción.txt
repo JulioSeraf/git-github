@@ -22,7 +22,3 @@ Lembrando que git y github no son lo mismo, git es el software de manejo de vers
 
 
 
-RESETEO DEL HISTORIAL 
-Podemos eliminar el historial de cambios del proyecto hacia adelante com respecto a un punto de referencia.
-
-# 
