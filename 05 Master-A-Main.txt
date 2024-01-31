@@ -1,0 +1,56 @@
+DE MASTER A MAIN 
+
+Con los desafortunados acontecimientios del 25 de mayo de 2020  en los Estados Unidos que culminaron en el assasinado del afroamreciano George Floyd a manos de policias de la ciudad de miniapolis, se intensificó de manera global el movimiento #BlackLivesMatter.
+
+Con dicho movimiento muchas indrustrias y empresas comenzaron a tomar acciones para erradicar el racismo.
+
+En la insustria de la tecnologia por años se han empleado palbras como master, slave, whitelist, blacklist entre otras que actualmente no son bien vistas por el contexto y semantica que implican.
+
+Al respecto Microsoft empres proprietaria de GitHub decidio comenzar  una campaña para reemplazar el nombre de la rama priciopal de los repositorios de master a main;
+
+Este cambio implica agregar una par de lineas de comandos adicionales para crear la rama 'main' y hacerla principal en el repositorio.
+
+Entosces el flujo básico quedaría de a siguiente manera:
+
+Para repositorios nuevos
+  git init 
+  git add . 
+  git commit -m "text de commit"
+  git branch -M main
+  git remote add origin https://github.com/Usuario/repositorio.git
+  git push -u origin main
+
+
+Para repositorios existentes 
+     git branch -M main 
+     git remote add origin  https://github.com/usuario/repositorio.git
+     git push -u origin main
+
+Para reemplazar la rama master por main en GitHub
+
+ # Paso 1 
+ # Crea la rama local main y pasale el historial de la rama master 
+   git branch -m master main
+
+# Paso 2
+# Haz un push de la nueva rama local main en el repositorio remoto de GitHub
+     git push -u origin main
+
+# Paso 3 
+# Cambia el HEAD actual a la rama main 
+     git  symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main
+
+# Paso 4 
+
+Cambia la rama default de master a main en tu repositorio de GitHub
+
+Para hacerlo, sigue las instrucciones de este enlace https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/changing-the-default-branch
+
+#Paso 5
+# Elimina la rama master del repositorio remoto
+
+     git push origin --delete master 
+
+Para reemplazar la rama master por main en git 
+
+     git config --global ini.defaultBranch main

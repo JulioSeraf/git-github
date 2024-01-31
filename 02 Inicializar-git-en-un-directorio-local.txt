@@ -1,0 +1,8 @@
+Inicializar git en un directorio local 
+
+* mkdir carpeta  = criar carpeta
+* cd carpeta = aceder a la carpeta 
+* touch README.md = para criar duciomento / podemos usar tambien "echo. >" en windows
+* touch .gitignore = al criar este documento git sabe que todos articho o rutas en nel teven ser ignorados
+* git init = para inicializar repozitorio cria  carpeta oculta de git
+* code . = abre la carpeta en visual stude code.

@@ -1,0 +1,7 @@
+AYUDA DE COMANDO TERMINAL 
+
+#ayuda en la terminal 
+     git comando -h = ex: git add -h
+
+# ayuda en el navegador 
+     git help comando = git help add 
