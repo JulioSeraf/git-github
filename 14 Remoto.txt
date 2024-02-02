@@ -1,0 +1,13 @@
+ Remotos 
+ # muestra la origenes remotos del repositorio 
+    git remote
+# muestra los origenes remotos con detalle
+    git remote -v
+# agrega un origin remoto
+    git remote add nombre-origen https://github.com/usuario/repositorio.git
+# renombrar un origen remoto
+    git remote rename nombre-viejo nombre-nuevo
+# eliminar un origen remoto
+    git remote remove nombre-origen
+# descargar un rama remota a local diferente a la pricipal
+    git checkout --tack -b rama-remota origin/rama-remota
