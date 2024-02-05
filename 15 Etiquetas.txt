@@ -1,0 +1,21 @@
+ETIQUETAS 
+Con esta opcion git nos permite versionar nuestro código, libreria o preyecto.
+# Listar Etiquetas 
+    git tag
+# Crea una etiqueta 
+    git tag numero-versión
+# eliminar una etiqueta 
+    git -d numero-versión 
+# mostrar un información de un etiqueta
+    git show numero-versión
+# sincronizando la etiqueta del repositorio local al remoto
+    git add .
+    git tag v1.0.0
+    git commit -m "v1.0.0"
+    git push origin numero-versión
+
+# generando un etiqueta anotada (con mensaje de commit)
+    git add .
+    git tag -a "v1.0.0" -m "mensaje de la etiqueta"
+    git push --tags
+    
