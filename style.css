@@ -2,3 +2,9 @@ body{
     text-align: center;
     font-family: sans-serif;
 }
+a{
+    color: orange;
+}
+a:hover{
+    color: red;
+}

@@ -1,0 +1,40 @@
+Colaboración en GitHub
+
+Para poder colaborar en proyecto alojados en GitHub necessitamos hacer el uso de los forks y pull request, herramientas que nos oferece dicha plataforma para dicho objetivo.
+
+A continuación describo el processo de Colaboración en GitHub.
+
+    1. Forkea el repositorio en el que quieres colaborar, para hacerlo, sigue las intrucciones de este enlace.
+
+    2. Una vez forkeado el repositorio en tu cuenta de GitHub, clónalo en tu equipo de cómputo.
+
+    3. En el repositorio local hay que configurar los origins remotos de tu nueva copia para tener ambos remotos, los orginales(origin), y los de tu copia, para hacerlo, sigue los intrucciones de este enlace.
+
+    4. Crea una rama nueva en tu fork local para hacer una colaboración, y sincrónizarla con tu repositorio remoto, para hacerlo, sigue las instrucciones de este enlace.
+
+    5. Configurar tu repositorio para que acepte cambions (pull requests), para harcerlo sigue las intrucciones de este enlace.
+
+    6. Crea un pull requests para hacerlo sigue las instrucciones de este enlace.
+
+    7. Espera que el dueño del repositorio original acepte tus cambios.
+
+    8. Una vez que acepte tu pull requests, es recomendable que borre la rama en que trabajaste el cambio y actualize tu repositorio forkeado, com los del repositorio orginal.
+
+    Resume de los comandos a ejecutar para colaborar en un repositorio de GitHub.
+
+    # FORKEAR repositorio
+        git clone https://github.com/usuario/repositorio.git
+        git remote -v
+        git remote rename origin fork
+        git remote add origin https://github.com/usuario/repositorio.git
+        git checkout -b rama-nueva
+        git push fork rama-nueva
+    # Solicitar el pull requests
+    # Aceptar el pull requests
+        git checkout main
+        git pull origin main
+        git push fork main
+        git branch -d rama-nueva
+        git push fork --delete rama-nueva
+
+        
